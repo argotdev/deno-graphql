@@ -16,7 +16,7 @@ const server = new Server({
           schema,
           graphiql: true,
         })(req)
-      : new Response("Not here, <a href='/graphql'>there</a>", { status: 404 });
+      : new Response("Not Found", { status: 404 });
   },
   port: 3000,
 });
